@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stlib.h>
+#include <unistd.h>
 #include <iomanip>
 #include <cstdlib>
 #include <time.h>
@@ -51,7 +51,7 @@ int main()
 	string inventory[4] = {""};
 	
 	intro();
-	//titleflash();
+	titleflash();
 	playerinfo(name , age, hi_ft , hi_in, we_lb, gender, bodytype);	
 	
 	
@@ -96,20 +96,20 @@ void intro()
 void titleflash()
 	{
 		cout<<"\t\t\t\t\t\t\t\tWELCOME TO: \n\n";
-		Sleep(2000);
-		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     \n";Sleep(300);
-		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@  @@@@@@@@@@   @@@|   @@@   @@@@   @@@     \n";Sleep(300);
-		cout<<"\t\t\t  @@@@   |     @@@@  @@@@|     @@@@        @@@@  |   @@@'   @@@   @@@@   @@@     \n";Sleep(300);
-		cout<<"\t\t\t  @@@@          @@@  @@@       @@@@        @@@@  '   @@@    @@@   @@@@    |      \n";Sleep(300);
-		cout<<"\t\t\t  @@@@@@@@@@     @@@@@@        @@@@        @@@@      @@@    @@@    @@@@          \n";Sleep(300);
-		cout<<"\t\t\t  @@@@@@@@@@     @@@@@@        @@@@        @@@@      @@@    @@@     @@@@@@@@     \n";Sleep(300);
-		cout<<"\t\t\t  @@@@     |    @@@| @@@       @@@@        @@@@      @@@    @@@          @@@@    \n";Sleep(300);
-		cout<<"\t\t\t  @@@@         @@@@  @@@@      @@@@        @@@@      @@@    @@@   @@@   @@@@@    \n";Sleep(300);
-		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     @@@@      @@@@@@@@@@   @@@  @@@@@@    \n";Sleep(300);
-		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     @@@@      @@@@@@@@@@   @@@@@@@@@@|    \n";Sleep(300);
-		cout<<"\t\t\t  | ' |       |       |     |    ||        |          ||    |     |   '     |    \n";Sleep(300);
-		cout<<"\t\t\t  |   |   '   '       '     |    '         |     '    |'          |         '    \n";Sleep(250);
-		cout<<"\t\t\t  | | '   '     '     |     '       '        '   |        '           |     '    \n";Sleep(250);   
+		sleep(2);
+		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     \n";sleep(1);
+		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@  @@@@@@@@@@   @@@|   @@@   @@@@   @@@     \n";sleep(1);
+		cout<<"\t\t\t  @@@@   |     @@@@  @@@@|     @@@@        @@@@  |   @@@'   @@@   @@@@   @@@     \n";sleep(1);
+		cout<<"\t\t\t  @@@@          @@@  @@@       @@@@        @@@@  '   @@@    @@@   @@@@    |      \n";sleep(1);
+		cout<<"\t\t\t  @@@@@@@@@@     @@@@@@        @@@@        @@@@      @@@    @@@    @@@@          \n";sleep(1);
+		cout<<"\t\t\t  @@@@@@@@@@     @@@@@@        @@@@        @@@@      @@@    @@@     @@@@@@@@     \n";sleep(1);
+		cout<<"\t\t\t  @@@@     |    @@@| @@@       @@@@        @@@@      @@@    @@@          @@@@    \n";sleep(1);
+		cout<<"\t\t\t  @@@@         @@@@  @@@@      @@@@        @@@@      @@@    @@@   @@@   @@@@@    \n";sleep(1);
+		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     @@@@      @@@@@@@@@@   @@@  @@@@@@    \n";sleep(1);
+		cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     @@@@      @@@@@@@@@@   @@@@@@@@@@|    \n";sleep(1);
+		cout<<"\t\t\t  | ' |       |       |     |    ||        |          ||    |     |   '     |    \n";sleep(1);
+		cout<<"\t\t\t  |   |   '   '       '     |    '         |     '    |'          |         '    \n";sleep(1);
+		cout<<"\t\t\t  | | '   '     '     |     '       '        '   |        '           |     '    \n";sleep(1);   
 			
 	for(int i = 1; i<7; i++)
 		{
@@ -124,12 +124,12 @@ void titleflash()
 			cout<<"\t\t\t  @@@@     |    @@@| @@@       @@@@        @@@@      @@@    @@@          @@@@    \n";
 			cout<<"\t\t\t  @@@@         @@@@  @@@@      @@@@        @@@@      @@@    @@@   @@@   @@@@@    \n";
 			cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  @@@@@@@@@@     @@@@      @@@@@@@@@@   @@@   @@@@@    \n";
-			cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  |@@@@@@@@@     @@@@      @@@@@@@@@@   @@@@@@@@@@|    \n";Sleep(100);
-			cout<<"\t\t\t  |   '' |       |       |     |    ||        |          ||    |     |   '     | \n";Sleep(500);
-			cout<<"\t\t\t  |   |   '   '       '     |    '         |     '    |'          |         '    \n";Sleep(250);
-			cout<<"\t\t\t  | | '   '     '     |     '       '        '   |        '           |     '    \n";Sleep(250);
-			cout<<"\t\t\t                                  LOADING...                                     \n";Sleep(350);
-			cout<<"\t\t\t  | '    '         |      '       |  ' |   '    '            ' |           '     \n";Sleep(250);
+			cout<<"\t\t\t  @@@@@@@@@@  @@@@@  @@@@@  |@@@@@@@@@     @@@@      @@@@@@@@@@   @@@@@@@@@@|    \n";sleep(.1);
+			cout<<"\t\t\t  |   '' |       |       |     |    ||        |          ||    |     |   '     | \n";sleep(1);
+			cout<<"\t\t\t  |   |   '   '       '     |    '         |     '    |'          |         '    \n";sleep(1);
+			cout<<"\t\t\t  | | '   '     '     |     '       '        '   |        '           |     '    \n";sleep(1);
+			cout<<"\t\t\t                                  LOADING...                                     \n";sleep(1);
+			cout<<"\t\t\t  | '    '         |      '       |  ' |   '    '            ' |           '     \n";sleep(1);
 				
 				if(i == 6)
 				{
@@ -219,11 +219,11 @@ void playerinfo(string& name, int& age, int& hi_ft, int& hi_in, int& we_lb, stri
 					{
 						cout<<"\n\t\tBRO YOUR TO YOUNG FOR THIS GAME:";
 						cout<<"\n\t\tCOMENSE SELf SHUTDOWN: ";
-							Sleep(1000);
+							sleep(1);
 							cout<<"\n\t\t 1..";
-							Sleep(1000);
+							sleep(1);
 							cout<<"2..";
-							Sleep(1000);
+							sleep(1);
 							cout<<"3!\n\n\n\n\n\n\n\n\n\n";
 							
 						exit(0);
@@ -239,14 +239,14 @@ void playerinfo(string& name, int& age, int& hi_ft, int& hi_in, int& we_lb, stri
 								cin>>hi_ans;
 									if(hi_ans == "yes")
 										cout<<"\t\tVERY WELL...LETS CONTINUE..";
-										Sleep(500);
+										sleep(5);
 										cout<<"liar..\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 										system("pause");
 										system("cls");
 										cout<<"\n\t\tOK SO WHERE WERE WE...";
-										Sleep(2500);
+										sleep(2);
 										cout<<"OH YES!:\n\n";
-										Sleep(1000);
+										sleep(1);
 										
 					}
 					
@@ -512,7 +512,7 @@ void character_choices(int& location,int& lightswitch,int& start_cnt,int& code,i
 
 int atStart(int& location,int& lightswitch,int& cnt,int& code,int& strength, int& intelligence, int& luck,string inventory[])
 {
-	Sleep(1000);
+	sleep(1);
 	system("cls");
 	string input;
 	if(lightswitch == 0 && cnt == 0)
@@ -531,7 +531,7 @@ int atStart(int& location,int& lightswitch,int& cnt,int& code,int& strength, int
 						cnt=1;
 						cnt = cnt;
 						cout<<"\n\t\t\tI think I found a light swtich lets turn it on...";
-						Sleep(1000);
+						sleep(1);
 						atStart(location,lightswitch, cnt, code, strength, intelligence, luck, inventory);
 					}
 					else 
@@ -551,7 +551,7 @@ int atStart(int& location,int& lightswitch,int& cnt,int& code,int& strength, int
 					{
 						lightswitch = 1;				
 						cout<<"\n\t\t\ti think i found a light swtich lets turn it on...";
-						Sleep(2000);
+						sleep(2);
 						atStart(location,lightswitch, cnt, code, strength, intelligence, luck, inventory);
 					}
 					else 
@@ -575,7 +575,7 @@ int atStart(int& location,int& lightswitch,int& cnt,int& code,int& strength, int
 		cout<<"\n\t\t\tLARGE DOOR LOCKED BY WHAT SEEMS TO BE A SECURTIY CODE KEYPAD.\n\n\n\n";
 		cnt=2;
 		
-		Sleep(1000);
+		sleep(1);
 		system("pause");
 		lightswitch = 1;
 		atStart(location,lightswitch, cnt, code, strength, intelligence, luck, inventory);					
@@ -650,7 +650,7 @@ void atDoor(int& location,int& lightswitch,int& cnt,int& code,int& str, int& int
 	cout<<"\t\t\t  Hmmmm... It looks like the door is locked and can only be unlocked with a code..damn... \n\n";
 	door_counter=1;
 	}
-	Sleep(2000);
+	sleep(2);
 	if(a[0] != "CROWBAR")
 		{
 			int door_option;
@@ -742,7 +742,7 @@ void atDoor(int& location,int& lightswitch,int& cnt,int& code,int& str, int& int
 									if(str >= 6)
 											{
 												cout<<"\t\t\t..OW!! I ALMOST HAD IT!!..It didnt work..now what?\n";
-												Sleep(3000);
+												sleep(3);
 													atDoor(location, lightswitch,cnt, code, str, intelligence, luck, a);
 													break;
 													
@@ -751,7 +751,7 @@ void atDoor(int& location,int& lightswitch,int& cnt,int& code,int& str, int& int
 											{
 												cout<<"\t\t\t ...I CANT!...This door is to strong for me im to weak..\n";
 												cout<<"\t\t\t    if only i worked out more.";
-													Sleep(3000);
+													sleep(3);
 													atDoor(location, lightswitch,cnt, code, str, intelligence, luck, a);
 													break;
 														
@@ -794,7 +794,7 @@ void atDoor(int& location,int& lightswitch,int& cnt,int& code,int& str, int& int
 										}	
 									else{
 											cout<<"\n\t\t\tIT WONT BUDGE:";
-											Sleep(2000);
+											sleep(2);
 											system("cls");
 											atDoor(location, lightswitch,cnt, code, str, intelligence, luck, a);
 										}
@@ -906,7 +906,7 @@ void atBed(int& location,int& lightswitch,int& cnt,int& code,int& str, int& inte
 					string answer ;
 					
 					int character_choice;
-						cout<<"\n\t\t\t[1] - SLEEP ON BED";
+						cout<<"\n\t\t\t[1] - sleep ON BED";
 						cout<<"\n\t\t\t[2] - LOOK UNDER BED";
 						cout<<"\n\t\t\t[3] - FLIP MATTRESS";
 						cout<<"\n\t\t\t[4] - GO BACK TO CENTER OF ROOM  ";
@@ -919,7 +919,7 @@ void atBed(int& location,int& lightswitch,int& cnt,int& code,int& str, int& inte
 										{
 											case 1:
 													system("cls");
-													Sleep(6000);
+													sleep(6);
 													atBed(location, lightswitch,cnt, code, str, intelligence, luck, a);
 													break;
 											case 2:	
@@ -934,10 +934,10 @@ void atBed(int& location,int& lightswitch,int& cnt,int& code,int& str, int& inte
 															{
 																cin>>answer;
 																cout<<"\n\t\t\tLets see whats under this mattress....(lifting noises or something...)";
-																Sleep(3000);
+																sleep(3);
 																cout<<"\n\t\t\t..huh.. there are a bunch of numbers scratched onto the bed frame..";
 																cout<<"\n\t\t\tMaybe its a code...";
-																Sleep(3000);
+																sleep(3);
 																cout<<"\n\n\t\t\t\t[WOULD YOU LIKE TO TRY AND DECHIPER THE CODE] ";
 																ws(cin);
 																cin>>answer;
@@ -954,7 +954,7 @@ void atBed(int& location,int& lightswitch,int& cnt,int& code,int& str, int& inte
 																				else
 																					{
 																						cout<<"\n\t\t\tUhh...this is to hard i give up..";
-																						Sleep(3000);
+																						sleep(3);
 																						system("cls");
 																						atBed(location, lightswitch, cnt, code, str, intelligence, luck,a);
 																					}
@@ -1050,7 +1050,7 @@ void NEVER_UNDER_THE_BED()
 	system("mode 2000");
 	system("color 0C");
 
-Sleep(3000);
+sleep(3);
 	cout<<"\a\n\n\t\t????++++++++++++??????+++=====~~,..................,:,.................,,,::::::::,,,,,,::::,,,...................................,:~==+?????+++++++++==~~~~~~~~\n"
 		<<"\t\t==+???+++++++++++????+++===~~~,,..................,:,..................,,::::::::,::::,::::,,......................................,,:~=+++??+++++++++==~~~~~~~~\n"
 		<<"\t\t==+III++++==+++????+++===~:,.....................,:,..................,,::::~:::::::::,,,............................................,.,:~=+??++++=++++=~~~~~~~~\n"
@@ -1122,7 +1122,7 @@ Sleep(3000);
 		<<"\t\t..................................................................,,.......,,..~=:.......,,,,...................................................................\n"
 		<<"\t\t.........................................................................................,,,,...................................................................\n"
 		<<"\t\t....................................................................,,................,,..,,....................................................................\n\a";
-	Sleep(500);
+	sleep(5);
 	system("cls");
 	DEAD();
 		
@@ -1138,7 +1138,7 @@ void END()
 	system("cls");
 	cout<<"\n\t\t\tCONGRATULATIONS YOU ESCAPED....THE FIRST CHAPTER...."
 		<<"\n\t\t\t         TO BE CONTINUED.....                       ";
-		Sleep(3000);
+		sleep(3);
 		exit(0);
 		
 }
@@ -1247,4 +1247,3 @@ void DEAD()
 						system("pause");
 						exit(0);
 }	
-
