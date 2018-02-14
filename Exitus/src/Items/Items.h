@@ -4,15 +4,20 @@
 
 #include <string>
 
-class Items {
-private:
-  std::string crowbar();
-  std::string key();
-  std::string code();
+struct Item {
+  std::string name;
+} crowbar, key, code;
 
-public:
+class Items {
+ public:
   Items();
+
+ private:
+  Item crowbar;
+  Item key;
+  Item code;
 };
 
-// does it change?
-#endif
+bool operator==(const Items &lhs, const Items &rhs);
+
+#endif  // ITEMS_H

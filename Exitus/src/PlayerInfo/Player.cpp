@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include "Player.h"
-#include "src/PlayerStats/PlayerStats.h"
+#include "Exitus/src/PlayerStats/PlayerStats.h"
 
 Player::Player() 
 {
